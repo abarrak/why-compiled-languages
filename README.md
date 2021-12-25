@@ -7,27 +7,32 @@ A simple loop operation to sum up the numbers from 1 to 1,000,000,000 (one billi
 
 # The execution 
 
+C++ run:
 ```cplusplus
 ```
 
+Java run:
 ```java
 ```
 
+C# run:
 ```csharp
 ```
 
+Python run:
 ```python
 ```
 
+Ruby run:
 ```ruby
 ```
 
 # The Results
-The two figures below shows the comparison between C++, C#, Java, Ruby, and Python languages in terms of speed (time) and memory.
+The two figures below show the comparison between `C++`, `C#`, `Java`, `Ruby`, and `Python` languages in terms of speed (time) and memory.
 
 
 # Contribution
-All PRs are welcome for other languages or 
+All PRs are welcome for other languages or improvements [on Github](https://github.com/abarrak/why-compiled-languages).
 
 # License
 MIT.
