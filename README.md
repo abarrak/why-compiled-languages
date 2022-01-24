@@ -8,6 +8,8 @@ A simple loop operation to sum up the numbers from 1 to 1,000,000,000 (one billi
 
 ## Execution
 
+The files are in `/src` directory.
+
 C++ run:
 
 ```shell
@@ -48,7 +50,7 @@ $ ruby ruby.rb
 
 The two figures below show the comparison between `C++`, `C#`, `Java`, `Ruby`, and `Python` languages in terms of speed (time) and memory.
 
-Clearly, the way of optimization of the code logic in compiled versions as we see in static compiled languages outperformed the interperted languages drastically. Additionally, `Java` and `C#` results show the outstanding optimization made to the compiler and runtime `JVM`/`CLR` to perform nearly identical to the low level languages, for such essential looping computing.
+Clearly, the way of optimization of this pure calculation logic in compiled versions as we see in static compiled languages outperformed the interperted languages drastically. Additionally, `Java` and `C#` results show the outstanding optimization made to the compiler and runtime `JVM`/`CLR` to perform nearly identical to the low level languages, for such essential looping computing.
 
 ## Contribution
 
