@@ -23,11 +23,11 @@ $ java Java
 ```
 
 C# run:
+_Note: use `mono` on macOS/linux only._
 ```shell
 $ csc csharp.cs
 $ mono csharp.exe
 ```
-Note: use `mono` on macOS/linux only.
 
 Python run:
 ```shell
@@ -52,7 +52,7 @@ real	0m0.395s
 user	0m0.361s
 sys	0m0.028s
 
-$ usr/bin/time -l java Java
+$ /usr/bin/time -l java Java
 ...
 22679552  maximum resident set size
 ```
