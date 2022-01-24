@@ -61,6 +61,10 @@ $ usr/bin/time -l java Java
 
 The two figures below show the comparison between `C++`, `C#`, `Java`, `Ruby`, and `Python` languages in terms of both speed (time) and memory (space).
 
+![1](https://github.com/abarrak/why-compiled-languages/blob/main/output/time.png?raw=true)
+
+![2](https://github.com/abarrak/why-compiled-languages/blob/main/output/space.png?raw=true)
+
 Clearly, the way of optimization of this pure calculation logic in compiled versions as we see in static compiled languages outperformed the interperted languages drastically in terms of speed. Additionally, `Java` and `C#` results show the outstanding optimization made to the compiler and runtime `JVM`/`CLR` to perform nearly identical to the low level languages, for such essential looping computing.
 
 ## Contribution
