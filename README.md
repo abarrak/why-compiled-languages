@@ -67,6 +67,16 @@ The two figures below show the comparison between `C++`, `C#`, `Java`, `Ruby`, a
 
 Clearly, the way of optimization of this pure calculation logic in compiled versions as we see in static compiled languages outperformed the interperted languages drastically in terms of speed. Additionally, `Java` and `C#` results show the outstanding optimization made to the compiler and runtime `JVM`/`CLR` to perform nearly identical to the low level languages, for such essential looping computing.
 
+Results breakdown:
+
+| Language    | Elapsed Time (second) | Memory (MB) |
+| ----------- | --------------------- | ----------- |
+| C++         |       0.015           |     7.49    |
+| Java        |       0.39            |     23      |
+| C#          |       1.172           |    11.88    |
+| Ruby        |       21.77           |    13.45    |
+| Python      |       17.89           |    4.66     |
+
 ## Contribution
 
 All PRs are welcome for other languages or improvements [on Github](https://github.com/abarrak/why-compiled-languages).
