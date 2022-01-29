@@ -1,4 +1,4 @@
-# Why Compiled Languages ?
+# Why Compiled Languages?
 
 This is a very simple experiment to demonstrate the importance of compiled languages over dynamic or interpreted languages when it comes to system programming or high degree of efficiency.
 
@@ -59,14 +59,6 @@ $ /usr/bin/time -l java Java
 
 ## Results
 
-The two figures below show the comparison between `C++`, `C#`, `Java`, `Ruby`, and `Python` languages in terms of both speed (time) and memory (space).
-
-<image src="https://raw.githubusercontent.com/abarrak/why-compiled-languages/main/output/time.png" width="80%" />
-
-<image src="https://raw.githubusercontent.com/abarrak/why-compiled-languages/main/output/space.png" width="80%" />
-
-Clearly, the way of optimization of this pure calculation logic in compiled versions as we see in static compiled languages outperformed the interperted languages drastically in terms of speed. Additionally, `Java` and `C#` results show the outstanding optimization made to the compiler and runtime `JVM`/`CLR` to perform nearly identical to the low level languages, for such essential looping computing.
-
 Results breakdown:
 
 | Language    | Elapsed Time (second) | Memory (MB) |
@@ -76,6 +68,15 @@ Results breakdown:
 | C#          |       1.172           |    11.88    |
 | Ruby        |       21.77           |    13.45    |
 | Python      |       17.89           |    4.66     |
+
+Clearly, the way of optimization of this pure calculation logic in compiled versions as we see in static compiled languages outperformed the interperted languages drastically in terms of speed. Additionally, `Java` and `C#` results show the outstanding optimization made to the compiler and runtime `JVM`/`CLR` to perform nearly identical to the low level languages, for such essential looping computing.
+
+The two figures below show the comparison between `C++`, `C#`, `Java`, `Ruby`, and `Python` languages in terms of both speed (time) and memory (space).
+
+<image src="https://raw.githubusercontent.com/abarrak/why-compiled-languages/main/output/time.png" width="80%" />
+
+<image src="https://raw.githubusercontent.com/abarrak/why-compiled-languages/main/output/space.png" width="80%" />
+
 
 ## Contribution
 
