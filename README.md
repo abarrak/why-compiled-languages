@@ -39,6 +39,11 @@ Ruby run:
 $ ruby ruby.rb
 ```
 
+Javascript (node) run:
+```javascript
+$ node javascript.js
+````
+
 ## Evaluation
 
 To obtain the time spent on execution, measure the last line of each run with `time` multiple times and get the average.
@@ -68,8 +73,10 @@ Results breakdown:
 | C#          |       1.172           |    11.88    |
 | Ruby        |       21.77           |    13.45    |
 | Python      |       17.89           |    4.66     |
+| JS (node)   |       0.873           |    22.97    |
 
-Clearly, the way of optimization of this pure calculation logic in compiled versions as we see in static compiled languages outperformed the interperted languages drastically in terms of speed. Additionally, `Java` and `C#` results show the outstanding optimization made to the compiler and runtime `JVM`/`CLR` to perform nearly identical to the low level languages, for such essential looping computing.
+
+Clearly, the way of optimization of this pure calculation logic in compiled versions as we see in static compiled languages outperformed the interperted languages (except `nodeJs`) drastically in terms of speed. Additionally, `Java` and `C#` results show the outstanding optimization made to the compiler and runtime `JVM`/`CLR` to perform nearly identical to the low level languages, for such essential looping computing. 
 
 The two figures below show the comparison between `C++`, `C#`, `Java`, `Ruby`, and `Python` languages in terms of both speed (time) and memory (space).
 
