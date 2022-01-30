@@ -42,7 +42,7 @@ $ ruby ruby.rb
 Javascript (node) run:
 ```javascript
 $ node javascript.js
-````
+```
 
 ## Evaluation
 
