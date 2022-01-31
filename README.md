@@ -44,6 +44,12 @@ Javascript (node) run:
 $ node javascript.js
 ```
 
+Go run:
+```shell
+$ go build go.go
+$ ./go
+```
+
 ## Evaluation
 
 To obtain the time spent on execution, measure the last line of each run with `time` multiple times and get the average.
