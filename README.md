@@ -70,7 +70,7 @@ $ /usr/bin/time -l java Java
 
 ## Results
 
-Results breakdown:
+Results breakdown (macOS mid 2015, 2.5 GHz Quad-Core Intel Core i7, 16 GB RAM):
 
 | Language    | Elapsed Time (second) | Memory (MB) |
 | ----------- | --------------------- | ----------- |
