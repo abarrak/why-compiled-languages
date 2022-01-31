@@ -80,7 +80,7 @@ Results breakdown:
 | Ruby        |       21.77           |    13.45    |
 | Python      |       17.89           |    4.66     |
 | JS (node)   |       0.873           |    22.97    |
-
+| Go          |       0.284           |    1.56     |
 
 Clearly, the way of optimization of this pure calculation logic in compiled versions as we see in static compiled languages outperformed the interperted languages (except `nodeJs`) drastically in terms of speed. Additionally, `Java` and `C#` results show the outstanding optimization made to the compiler and runtime `JVM`/`CLR` to perform nearly identical to the low level languages, for such essential looping computing. 
 
