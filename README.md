@@ -44,6 +44,12 @@ Javascript (node) run:
 $ node javascript.js
 ```
 
+Go run:
+```shell
+$ go build go.go
+$ ./go
+```
+
 ## Evaluation
 
 To obtain the time spent on execution, measure the last line of each run with `time` multiple times and get the average.
@@ -53,9 +59,9 @@ For example:
 ```shell
 $ time java Java
 ...
-real	0m0.395s
-user	0m0.361s
-sys	0m0.028s
+real  0m0.395s
+user  0m0.361s
+sys 0m0.028s
 
 $ /usr/bin/time -l java Java
 ...
@@ -64,7 +70,7 @@ $ /usr/bin/time -l java Java
 
 ## Results
 
-Results breakdown:
+Results breakdown (macOS mid 2015, 2.5 GHz Quad-Core Intel Core i7, 16 GB RAM):
 
 | Language    | Elapsed Time (second) | Memory (MB) |
 | ----------- | --------------------- | ----------- |
@@ -74,7 +80,7 @@ Results breakdown:
 | Ruby        |       21.77           |    13.45    |
 | Python      |       17.89           |    4.66     |
 | JS (node)   |       0.873           |    22.97    |
-
+| Go          |       0.284           |    1.56     |
 
 Clearly, the way of optimization of this pure calculation logic in compiled versions as we see in static compiled languages outperformed the interperted languages (except `nodeJs`) drastically in terms of speed. Additionally, `Java` and `C#` results show the outstanding optimization made to the compiler and runtime `JVM`/`CLR` to perform nearly identical to the low level languages, for such essential looping computing. 
 

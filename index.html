@@ -22,8 +22,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-    body  {
-      background-color: #F3F3F3;
+    body {
+        background-color: #F3F3F3;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1080px) {
+        div.container {
+            max-width: 95% !important;
+            margin: 1rem auto !important;
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        div.container {
+            max-width: 95% !important;
+            margin: 1rem auto !important;
+        }
+        div .markdown-body {
+            padding: 20px !important;
+            padding-top: 55px !important;
+        }
 
     }
 
@@ -1292,62 +1310,70 @@
 </head>
 
 <body>
-  <div class="container">
-    <a class="github-fork-ribbon" href="https://github.com/abarrak/why-compiled-languages" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">
-    Fork me on GitHub
-    </a>
-    <article class="markdown-body">
-        <h1 id="why-compiled-languages">Why Compiled Languages?<a class="headerlink" href="#why-compiled-languages" title="Permanent link"></a></h1>
-        <p>This is a very simple experiment to demonstrate the importance of compiled languages over dynamic or interpreted languages when it comes to system programming or high degree of efficiency.</p>
-        <h2 id="experiment">Experiment<a class="headerlink" href="#experiment" title="Permanent link"></a></h2>
-        <p>A simple loop operation to sum up the numbers from 1 to 1,000,000,000 (one billion).</p>
-        <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link"></a></h2>
-        <p>Clone the repo, then open <code>src/</code> directory.</p>
-        <p>C++ run:
-            <div class="highlight">
-                <pre><span class="nv">$ </span>g++ cplusplus.cpp -o cpp -O3
+    <div class="container">
+        <a class="github-fork-ribbon" href="https://github.com/abarrak/why-compiled-languages" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">
+            Fork me on GitHub
+        </a>
+        <article class="markdown-body">
+            <h1 id="why-compiled-languages">Why Compiled Languages?<a class="headerlink" href="#why-compiled-languages" title="Permanent link"></a></h1>
+            <p>This is a very simple experiment to demonstrate the importance of compiled languages over dynamic or interpreted languages when it comes to system programming or high degree of efficiency.</p>
+            <h2 id="experiment">Experiment<a class="headerlink" href="#experiment" title="Permanent link"></a></h2>
+            <p>A simple loop operation to sum up the numbers from 1 to 1,000,000,000 (one billion).</p>
+            <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link"></a></h2>
+            <p>Clone the repo, then open <code>src/</code> directory.</p>
+            <p>C++ run:
+                <div class="highlight">
+                    <pre><span class="nv">$ </span>g++ cplusplus.cpp -o cpp -O3
 <span class="nv">$ </span>./cpp
 </pre>
-            </div>
-        </p>
-        <p>Java run:
-            <div class="highlight">
-                <pre><span class="nv">$ </span>javac java.java
+                </div>
+            </p>
+            <p>Java run:
+                <div class="highlight">
+                    <pre><span class="nv">$ </span>javac java.java
 <span class="nv">$ </span>java Java
 </pre>
-            </div>
-        </p>
-        <p>C# run:
-            <em>Note: use <code>mono</code> on macOS/linux only.</em>
-            <div class="highlight">
-                <pre><span class="nv">$ </span>csc csharp.cs
+                </div>
+            </p>
+            <p>C# run:
+                <em>Note: use <code>mono</code> on macOS/linux only.</em>
+                <div class="highlight">
+                    <pre><span class="nv">$ </span>csc csharp.cs
 <span class="nv">$ </span>mono csharp.exe
 </pre>
-            </div>
-        </p>
-        <p>Python run:
-            <div class="highlight">
-                <pre><span class="nv">$ </span>python python.py
+                </div>
+            </p>
+            <p>Python run:
+                <div class="highlight">
+                    <pre><span class="nv">$ </span>python python.py
 </pre>
-            </div>
-        </p>
-        <p>Ruby run:
-            <div class="highlight">
-                <pre><span class="nv">$ </span>ruby ruby.rb
+                </div>
+            </p>
+            <p>Ruby run:
+                <div class="highlight">
+                    <pre><span class="nv">$ </span>ruby ruby.rb
 </pre>
-            </div>
-        </p>
-        <p>Javascript (node) run:
-            <div class="highlight">
-                <pre><span class="nx">$</span> <span class="nx">node</span> <span class="nx">javascript</span><span class="p">.</span><span class="nx">js</span>
+                </div>
+            </p>
+            <p>Javascript (node) run:
+                <div class="highlight">
+                    <pre><span class="nx">$</span> <span class="nx">node</span> <span class="nx">javascript</span><span class="p">.</span><span class="nx">js
+                </span>
 </pre>
-            </div>
-        </p>
-        <h2 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link"></a></h2>
-        <p>To obtain the time spent on execution, measure the last line of each run with <code>time</code> multiple times and get the average.</p>
-        <p>For example:</p>
-        <div class="highlight">
-            <pre><span class="nv">$ </span><span class="nb">time </span>java Java
+                </div>
+            </p>
+            <p>Go run:
+                <div class="highlight">
+                    <pre><span class="nv">$ </span>go build go.go
+<span class="nv">$ </span>./go
+</pre>
+                </div>
+            </p>
+            <h2 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link"></a></h2>
+            <p>To obtain the time spent on execution, measure the last line of each run with <code>time</code> multiple times and get the average.</p>
+            <p>For example:</p>
+            <div class="highlight">
+                <pre><span class="nv">$ </span><span class="nb">time </span>java Java
 ...
 real    0m0.395s
 user    0m0.361s
@@ -1357,72 +1383,79 @@ sys 0m0.028s
 ...
 <span class="m">22679552</span>  maximum resident <span class="nb">set </span>size
 </pre>
-        </div>
-        <h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link"></a></h2>
-        <p>Results breakdown:</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Language</th>
-                    <th>Elapsed Time (second)</th>
-                    <th>Memory (MB)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>C++</td>
-                    <td>0.015</td>
-                    <td>7.49</td>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>0.39</td>
-                    <td>23</td>
-                </tr>
-                <tr>
-                    <td>C#</td>
-                    <td>1.172</td>
-                    <td>11.88</td>
-                </tr>
-                <tr>
-                    <td>Ruby</td>
-                    <td>21.77</td>
-                    <td>13.45</td>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>17.89</td>
-                    <td>4.66</td>
-                </tr>
-                <tr>
-                    <td>JS (node)</td>
-                    <td>0.873</td>
-                    <td>22.97</td>
-                </tr>
+            </div>
+            <h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link"></a></h2>
+            <p>Results breakdown:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Elapsed Time (second)</th>
+                        <th>Memory (MB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C++</td>
+                        <td>0.015</td>
+                        <td>7.49</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>0.39</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>1.172</td>
+                        <td>11.88</td>
+                    </tr>
+                    <tr>
+                        <td>Ruby</td>
+                        <td>21.77</td>
+                        <td>13.45</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>17.89</td>
+                        <td>4.66</td>
+                    </tr>
+                    <tr>
+                        <td>JS (node)</td>
+                        <td>0.873</td>
+                        <td>22.97</td>
+                    </tr>
+                    <tr>
+                        <td>Go</td>
+                        <td>0.284</td>
+                        <td>1.56</td>
+                    </tr>
+                </tbody>
+            </table>
             </tbody>
-        </table>
-        <p>Clearly, the way of optimization of this pure calculation logic in compiled versions as we see in static compiled languages outperformed the interperted languages (except <code>nodeJs</code>) drastically in terms of speed. Additionally, <code>Java</code> and <code>C#</code> results show the outstanding optimization made to the compiler and runtime <code>JVM</code>/<code>CLR</code> to perform nearly identical to the low level languages, for such essential looping computing. </p>
-        <p>The two figures below show the comparison between <code>C++</code>, <code>C#</code>, <code>Java</code>, <code>Ruby</code>, and <code>Python</code> languages in terms of both speed (time) and memory (space).</p>
-        <p>
-            <image src="https://raw.githubusercontent.com/abarrak/why-compiled-languages/main/output/time.png" width="80%" />
-        </p>
-        <p>
-            <image src="https://raw.githubusercontent.com/abarrak/why-compiled-languages/main/output/space.png" width="80%" />
-        </p>
-        <h2 id="contribution">Contribution<a class="headerlink" href="#contribution" title="Permanent link"></a></h2>
-        <p>All PRs are welcome for other languages or improvements <a href="https://github.com/abarrak/why-compiled-languages">on Github</a>.</p>
-        <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link"></a></h2>
-        <p>MIT.</p>
-        <h2 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Permanent link"></a></h2>
-        <ul>
-        <li>Abdullah Barrak <a href="https://github.com/abarrak">(@abarrak)</a>.</li>
-        <li>Eliot Akira <a href="https://github.com/eliot-akira">(@eliot-akira)</a>.</li>
-    </article>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>
-    anchors.add();
-    </script>
-</div>
+            </table>
+            <p>Clearly, the way of optimization of this pure calculation logic in compiled versions as we see in static compiled languages outperformed the interperted languages (except <code>nodeJs</code>) drastically in terms of speed. Additionally, <code>Java</code> and <code>C#</code> results show the outstanding optimization made to the compiler and runtime <code>JVM</code>/<code>CLR</code> to perform nearly identical to the low level languages, for such essential looping computing. </p>
+            <p>The two figures below show the comparison between <code>C++</code>, <code>C#</code>, <code>Java</code>, <code>Ruby</code>, and <code>Python</code> languages in terms of both speed (time) and memory (space).</p>
+            <p>
+                <image src="https://raw.githubusercontent.com/abarrak/why-compiled-languages/main/output/time.png" />
+            </p>
+            <p>
+                <image src="https://raw.githubusercontent.com/abarrak/why-compiled-languages/main/output/space.png" />
+            </p>
+            <h2 id="contribution">Contribution<a class="headerlink" href="#contribution" title="Permanent link"></a></h2>
+            <p>All PRs are welcome for other languages or improvements <a href="https://github.com/abarrak/why-compiled-languages">on Github</a>.</p>
+            <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link"></a></h2>
+            <p>MIT.</p>
+            <h2 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Permanent link"></a></h2>
+            <ul>
+                <li>Abdullah Barrak <a href="https://github.com/abarrak">(@abarrak)</a>.</li>
+                <li>Eliot Akira <a href="https://github.com/eliot-akira">(@eliot-akira)</a>.</li>
+        </article>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+        <script>
+        anchors.add();
+        </script>
+    </div>
 </body>
 
 </html>
