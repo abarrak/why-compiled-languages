@@ -93,6 +93,7 @@ All PRs are welcome for other languages or improvements [on Github](https://gith
 
 MIT.
 
-## Author
+## Contributors
 
-Abdullah Barrak (@abarrak).
+- Abdullah Barrak [(@abarrak)](https://github.com/abarrak).
+- Eliot Akira [(@eliot-akira)](https://github.com/eliot-akira).
